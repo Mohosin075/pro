@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>products counter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+<div class="counter">
+ 
+  <h1>Products Counter</h1>
+   <div class="counter-inner">
+    <div class="total-product">
+      <img src="a.png" alt="" />
+      <div>
+        <h4>Price : 250 TK</h4>
+        <h4>Quantity : <span id="quantity">0</span></h4>
+        <h4>Total Price : <span id="price">0</span> TK</h4>
+    </div>
+    </div>
+    <button class="btn" onclick="productCount(false)">-</button>
+        <input id="input" type="number" value="0">
+        <button class="btn" onclick="productCount(true)">+</button>
+        <br />
+        
+        <button class="btn buy-btn" type="submit">Order now</button>
+        
+      </div>
+      <h5>#Md. Mohosin</h5>
+  </div>
+
+
+<script>
+  
+  
+  
+  
+  
+  function productCount(product){
+    const inputBtn = document.getElementById('input').value;
+    const newInputBtn = parseInt(inputBtn);
+    let total = newInputBtn;
+    if(product == true ){
+      total = newInputBtn + 1;
+    }
+    if(product == false && newInputBtn > 0){
+      total = newInputBtn - 1;
+    }
+    document.getElementById('input').value =total;
+    document.getElementById('quantity')
+    .innerText = total;
+    
+  };
+  
+  const buyBtn = document.querySelector('.buy-btn');
+  buyBtn.addEventListener('click',function(){
+    const inputBtn = document.getElementById('quantity')
+      .innerText = document.getElementById('input').value;
+    let newInputBtn = parseInt(inputBtn);
+    
+    const totalPrice = newInputBtn * 250;
+    
+    document.getElementById('price').innerHTML = totalPrice;
+    
+    
+    
+  })
+  
+  
+  
+  
+</script>
+</body>
+
+</html>

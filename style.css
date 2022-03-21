@@ -1,0 +1,89 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppinse", sans-serif;
+  background: #000;
+}
+
+
+.counter{
+  width: 100%;
+  height: 100vh;
+  
+}
+.counter h1,h5{
+  color: #fff;
+  text-align: center;
+  margin: 40px 0 0;
+  font-style: 40px;
+}
+h5{
+  margin: 20px 0;
+  font-size: 20px;
+  color: orangered;
+}
+.counter-inner{
+  width: 330px;
+  margin: 0 auto;
+  padding: 30px;
+  background: #fff;
+  margin-top: 10px;
+  border-radius: 30px;
+}
+.total-product{
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+.total-product img{
+  width: 150px;
+  padding-right: 20px;
+}
+
+.total-product h4{
+  font-size: 14px;
+  margin: 10px 0 0;
+  color: #fff;
+}
+.counter-inner input{
+  width: 150px;
+  height: 30px;
+  margin: 25px 12px;
+  padding: 10px;
+  box-shadow: 5px 3px 10px gray;
+  border: 3px solid transparent;
+  outline: 0;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  background: #000;
+}
+.counter-inner input:hover{
+  box-shadow: 5px 5px 10px gray;
+  background-color: #E3B506;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.counter-inner input::placeholder{
+  color: #000000;
+}
+.counter-inner .btn{
+  width: 40px;
+  height: 30px;
+  background: #000;
+  color: #fff;
+  border: 1px solid #fff;
+  outline: none;
+  box-shadow: 5px 5px 10px gray;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+.counter-inner .buy-btn{
+  width: 100%;
+}
+.counter-inner .btn:hover{
+  background: #E3B506;
+  color: #fff;
+}
